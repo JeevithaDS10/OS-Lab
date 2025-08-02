@@ -123,17 +123,17 @@ void rround(Process processes[],int n,int quantum,int tempBT[])
             printf("%d\t %d\t %d\t %d\t%d\t %d\t %d\n",processes[i].pid,processes[i].AT,tempBT[i],processes[i].CT,processes[i].TAT,processes[i].WT);
             totalTAT+=processes[i].TAT;
             totalWT+=processes[i].WT;
-           // totalRT+=processes[i].RT;
+           
         }
 
 
 
         avgTAT=(float)totalTAT/n;
         avgWT=(float)totalWT/n;
-        //avgRT=(float)totalRT/n;
+        
 
 
         printf("\nAvg TAT=%.2lf\n",avgTAT);
         printf("Avg WT=%.2lf\n",avgWT);
-       // printf("Avg RT=%.2lf\n",avgRT);
+       
     }
